@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>INF Wordle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+
+        <link rel="stylesheet" href="wordle.css">
+        <script src="wordle.js"></script>
+    </head>
+
+    <body>
+        <h1 id="title">INF Wordle By Dino</h1>
+        <hr>
+        <br>
+        <div id="board">
+        </div>
+        <h1 id="answer"></h1>
+        <button onclick="myFunction()">Toggle Dark Mode</button>
+        <button onclick="row += 1;">Delete 1 Try</button>
+        <button onclick="myHacks()">Add 1+ Try</button>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+        <input type="button" value="Get New Word" onclick="window.location.reload(); alert('You Now Have A Different Word')">
+    </body>
+</html>
